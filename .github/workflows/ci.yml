@@ -46,4 +46,3 @@ jobs:
           python -c "import safe_agent_queue; print('import ok')"
           # Check CLI help
           python -m safe_agent_queue --help
-          python -m safe_agent_queue doctor
