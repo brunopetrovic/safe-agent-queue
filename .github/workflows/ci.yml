@@ -37,7 +37,9 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install lint deps
-        run: pip install pyproject-flake8 pydocstyle
+        run: |
+          pip install pyproject-flake8 pydocstyle
+          pip install -e .
       - name: Lint
         run: |
           # Check imports
